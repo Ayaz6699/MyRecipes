@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20160805101230) do
+ActiveRecord::Schema.define(version: 20160809094112) do
 
   create_table "chefs", force: :cascade do |t|
     t.string   "chefname"
@@ -22,6 +22,7 @@ ActiveRecord::Schema.define(version: 20160805101230) do
     t.string   "avatar_content_type"
     t.integer  "avatar_file_size"
     t.datetime "avatar_updated_at"
+    t.string   "password_digest"
   end
 
   create_table "likes", force: :cascade do |t|
